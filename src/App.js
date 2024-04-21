@@ -65,7 +65,7 @@ function Register({ onRegister }) {
     e.preventDefault();
   
     // Password validation
-    const passwordRegex = /^(?=.*\d)(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.{8,})/;
+    const passwordRegex = /^(?=.*\d)(?=.*[A-Z])(?=.*[!@#$%^&*])(?=.{6,})/;
     if (!passwordRegex.test(password)) {
       setError('Password must contain at least 6 characters, including at least one uppercase letter, one digit, and one special character');
       return;
